@@ -1,0 +1,66 @@
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+if syn then
+
+
+local win = lib:Window("Egg Dupe",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+
+local tab = win:Tab("Egg Dupe")
+
+
+tab:Button("Dupe All Eggs!", function()
+print("starting dupe, please wait")
+local bindableFunction = Instance.new("BindaleFunction")
+bindableFunction.OnInvoke = callbackb
+ 
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Egg Dupe Started"; -- Required. Has to be a string!
+Text = "IT HAS STARTEDDD"; -- Required. Has to be a string!
+	Icon = ""; -- Optional, defaults to "" (no icon)
+Duration = 600; -- Optional, defaults to 5 seconds
+	Callback = bindableFunction; -- Optional, gets invoked with the text of the button the user pressed
+	Button1 = "Ok"; -- Optional, makes a button appear with the given text that, when clicked, fires the Callback if it's given
+   
+})
+end)
+
+
+elseif KRNL_LOADED then
+
+    local bindableFunction = Instance.new("BindaleFunction")
+	bindableFunction.OnInvoke = callbackb
+	 
+	game.StarterGui:SetCore("SendNotification", {
+	    Title = "Use A PAID exploit for best acesss"; -- Required. Has to be a string!
+    Text = "KRNL may not work!"; -- Required. Has to be a string!
+	    Icon = ""; -- Optional, defaults to "" (no icon)
+    Duration = 600; -- Optional, defaults to 5 seconds
+	    Callback = bindableFunction; -- Optional, gets invoked with the text of the button the user pressed
+	    Button1 = "Ok"; -- Optional, makes a button appear with the given text that, when clicked, fires the Callback if it's given
+	   
+	})
+	local win = lib:Window("Egg Dupe",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+
+
+
+
+tab:Button("Dupe All Eggs!", function()
+print("starting dupe, please wait")
+local bindableFunction = Instance.new("BindaleFunction")
+bindableFunction.OnInvoke = callbackb
+ 
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Egg Dupe Started"; -- Required. Has to be a string!
+Text = "IT HAS STARTEDDD"; -- Required. Has to be a string!
+	Icon = ""; -- Optional, defaults to "" (no icon)
+Duration = 600; -- Optional, defaults to 5 seconds
+	Callback = bindableFunction; -- Optional, gets invoked with the text of the button the user pressed
+	Button1 = "Ok"; -- Optional, makes a button appear with the given text that, when clicked, fires the Callback if it's given
+   
+})
+end)
+
+
+tab:Textbox("https://discord.gg/QcvG73Nx to buy",true, function(t)
+print(t)
+end)
+end
